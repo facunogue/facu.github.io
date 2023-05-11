@@ -141,6 +141,12 @@ p {
     font-size: 20px;
 }
 
+.pasoPagina{
+    margin: 60px 0 120px 0;
+    color: #171717;
+    font-size: 25px;
+}
+
 .remoto{
     color: #ced119;
     font-size: 30px;
