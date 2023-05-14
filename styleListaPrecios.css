@@ -4,11 +4,64 @@
     border: 0;
     font-size: 100%;
     vertical-align: baseline;
-    list-style: none;
     box-sizing: border-box;
+    list-style: none;
+    background-color: #565658;
 }
 
-body{
-    background-image: url(public/assents/img/img8.jpg);
-    background-repeat: no-repeat;
+body {
+    text-align: center;
+    font-family: sans-serif;
+    background-color: #565658;
+}
+
+
+a{
+    color: #010435;
+    text-decoration: none;
+}
+
+.listaPrecios{
+    font-size: 20px;
+    margin: 50px 20px 50px 20px;
+    border: 2px solid black;
+}
+
+.titulo{
+    display: inline-block;
+    width: 30%;
+    margin: 5%;
+    font-size: 23px;
+    border: 2px solid black;
+    padding: 5px;
+}
+
+.sub-titulo{
+    border-bottom: 1px  solid black;
+    padding: 30px 0 30px 0;
+}
+
+.titulo-2{
+    margin: 10%;
+    font-size: 30px;
+    color: orange;
+}
+
+.info{
+    margin: 20%;
+}
+
+
+.listas{
+    border-bottom: 1px solid #000000 ;
+    color: #000000;
+    padding: 10px 0 20px 0;
+    width: 100%;
+}
+
+.volver{
+    font-size: 30px;
+    color: #ffe600;
+    text-align: center;
+    margin: 10%;
 }
