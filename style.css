@@ -31,21 +31,34 @@ body {
 }
 
 .navbar {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    background: #171717;
     display: flex;
-    margin-right: 10px;
     justify-content: space-between;
     padding-left: 5%;
     padding-right: 5%;
     font-weight: bold;
 }
-
-#logo{
-    font-size: 30px;
-    float: right;
-    margin: 10px 10px;
-    color: #fff;
+.menu{
+    display: none;
 }
 
+head nav .menu-bar{
+    overflow: hidden;
+    list-style: none;
+}
+
+head nav .menu-bar li{
+    float: left;
+}
+
+head nav .menu-bar li a{
+    padding: 20px;
+    display: block;
+    text-decoration: none;
+}
 
 .navbar a {
     display: inline-block;
@@ -66,6 +79,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px;
 }
 
 .tcontact{
@@ -231,7 +245,38 @@ input::placeholder, textarea::placeholder{
 }
 
 
-@media (max-width: 768px) {
+@media screen and (max-width: 800px) {
+    .head nav{
+        height: 100%;
+        left: -100%;
+        margin: 0;
+        position: fixed;
+    }
+
+    .head nav ul li{
+        display: block;
+        float: none;
+        border-bottom: 1px solid rgba(255, 255, 255, .3);
+    }
+
+    .menu{
+        display: block;
+        width: 100%;
+        background: #ccc;
+    }
+
+    .menu .btn-menu{
+        display: block;
+        padding: 20px;
+        background: #171717;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .menu i{
+        float: right;
+    }
 
     .title {
         margin-bottom: 0;
