@@ -8,7 +8,7 @@ if(!localStorage.getItem('cookies-aceptadas')){
     avisoCookies.classList.add('activo');
     fondoAvisoCookies.classList.add('activo');
 }else{
-    dataLayer.push({'event', 'cookies-aceptadas'});
+    dataLayer.push({'event': 'cookies-aceptadas'});
 }
 
 
@@ -19,5 +19,5 @@ botonAceptarCookies.addEventListener('click' , () => {
 
     localStorage.setItem('cookiesa-aceptadas' , true);
 
-    dataLayer.push({'event', 'cookies-aceptadas'});
+    dataLayer.push({'event': 'cookies-aceptadas'});
 });
