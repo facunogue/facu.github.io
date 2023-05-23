@@ -321,9 +321,6 @@ input::placeholder, textarea::placeholder{
 }
 /*MEDIA menu*/
 @media (max-width:768px) {
-    body{
-        overflow: hidden;
-    }
     .logo{
         padding-left: 25px;
     }
