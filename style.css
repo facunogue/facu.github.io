@@ -18,63 +18,62 @@ body {
     background-color: #565658;
 }
 
-.head {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 63px;
-    background: #171717;
-    position: fixed;
-    width: 100%;
-    z-index: 100;
-    float: center;
+/*INICIO menu*/
+.logo{
+    width: 100px;
+    height: 90px;
 }
 
-.navbar {
-    width: 90%;
-    max-width: 1000px;
-    margin: 20px auto;
-    background: #171717;
+nav{
     display: flex;
-    justify-content: space-between;
-    padding-left: 5%;
-    padding-right: 5%;
-    font-weight: bold;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 8vh;
+    background-color: #3f3f3f;
 }
-.menu{
+
+.ham{
     display: none;
+    cursor: pointer;
+    border: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    font-size: 30px;
 }
 
-head nav .menu-bar{
-    overflow: hidden;
-    list-style: none;
-}
-
-head nav .menu-bar li{
-    float: left;
-}
-
-head nav .menu-bar li a{
-    padding: 20px;
+.ham span{
     display: block;
+    background-color: #f3f3f3;
+    height: 3px;
+    width: 28px;
+    margin: 10px auto;
+    border-radius: 2px;
+}
+
+.enlaces-menu{
+    display: flex;
+    padding: 0;
+}
+
+.enlaces-menu li{
+    padding: 0 40px;
+    transition: 0.5s;
+}
+
+.enlaces-menu li a{
     text-decoration: none;
+    font-size: 1.8rem;
+    color: #f3f3f3;
+    font-weight: 600;
 }
 
-.navbar a {
-    display: inline-block;
-    padding: 20px 20px;
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 20px;
-    margin: auto;
-    align-items: center;
+.enlaces-menu li:hover{
+    background-color: rgba(62, 130, 197);
 }
 
-.navbar a:hover {
-    background: #3f3f3f;
-}
 
+/*FIN menu*/
 .header {
     display: flex;
     justify-content: space-between;
@@ -320,47 +319,49 @@ input::placeholder, textarea::placeholder{
 .btn:hover{
     background-color: #50e04b;
 }
-
-
-@media screen and (max-width: 800px) {
-    .head nav{
-        height: 100%;
-        left: -100%;
+/*MEDIA menu*/
+@media (max-width:768px) {
+    body{
+        overflow: hidden;
+    }
+    .logo{
+        padding-left: 25px;
+    }
+    .ham{
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 25px;
+    }
+    nav{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 25px 0;
+    }
+    .enlaces-menu{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 92vh;
         margin: 0;
-        position: fixed;
-    }
-
-    .head nav ul li{
-        display: block;
-        float: none;
-        border-bottom: 1px solid rgba(255, 255, 255, .3);
-    }
-
-    .menu{
-        display: block;
+        padding: 0;
         width: 100%;
-        background: #ccc;
+        display: none;
+        opacity: 0;
     }
-
-    .menu .btn-menu{
-        display: block;
+    .enlaces-menu li{
+        width: 100%;
+        text-align: center;
         padding: 20px;
-        background: #171717;
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 20px;
     }
+}
 
-    .menu i{
-        float: right;
-    }
+@keyframes muestraMenu{
+    form{opacity: 0;}
+    to{opacity: 1;}
+}
 
-    .title {
-        margin-bottom: 0;
-        font-size: 40px;
-    }
-
-    .navbar {
-        display: center;
-    }
+.enlaces-menu.activado{
+    display: flex;
+    animation: muestraMenu 1000ms ease-in-out both;
 }
