@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .productos {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px;
+  }
+  
+  .producto {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .precio {
+    color: #e74c3c;
+    font-weight: bold;
+  }
+
+  /* Estilos de la sección de productos */
+.productos {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px;
+  }
+  
+  .producto {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    width: 300px;
+  }
+  
+  .producto img {
+    max-width: 100%;
+  }
+  
+  .precio {
+    color: #0105ff;
+    font-weight: bold;
+  }
+  
+  /* Estilos para botón "Agregar al carrito" */
+  .agregar-carrito {
+    background-color: #11dd33;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .agregar-carrito:hover {
+    background-color: #2980b9;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f9f9f9;
+  }
+  
