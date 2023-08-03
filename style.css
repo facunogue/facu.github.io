@@ -20,17 +20,15 @@ body {
 /*inicio de productos*/
 .productos {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    margin: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
   }
   
   .producto {
     border: 1px solid #ddd;
-    padding: 10px;
-    margin: 10px;
+    box-sizing: border-box;
     text-align: center;
-    width: 300px;
+    width: 50%;
   }
   
   .producto img {
