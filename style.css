@@ -17,24 +17,6 @@ body {
     font-family: sans-serif;
     background-color: #565658;
 }
-/*inicio de productos*/
-.productos {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 10px;
-  }
-  
-  .producto {
-    border: 1px solid #ddd;
-    box-sizing: border-box;
-    text-align: center;
-    width: 50%;
-  }
-  
-  .producto img {
-    max-width: 100%;
-  }
-/*fin de productos*/
 
 /*INICIO menu*/
 .logo{
