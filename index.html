@@ -2,91 +2,513 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    
-    <script src="https://kit.fontawesome.com/630915a30f.js" crossorigin="anonymous"></script>
-
-    <title>servicios informaticos</title>
-
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5982409703562998" crossorigin="anonymous"></script>
-
+    <title>Innovation FF - Productos</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
-    <nav>
-            <ul class="enlaces-menu">
-                <li><a href="#inicio"><i class="fa-solid fa-house"></i> Inicio</a></li>
-                <li><a href="#contacto"><i class="fa-solid fa-user"></i> Conacto</a></li>
+    <header>
+        <div class="header-container">
+            <h1>Innovation FF</h1>
+            <div class="search-container">
+                <input type="text" id="search-bar" placeholder="Buscar...">
+                <button onclick="searchFunction()"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+        <nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-list" id="menu">
+                <li>
+                    <a href="#">Categorías <i class="fas fa-caret-down"></i></a>
+                    <ul class="sub-menu">
+                            <a href="#Notebook">Notebooks</a>
+                        </li>
+                        <li>
+                            <a href="#PC-Escritorio">PC Escritorio</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#Carrito">Carrito</a></li>
             </ul>
-
-            <button class="ham" type="button">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-    </nav>
-
-    <h2 class="tcontact" id="inicio">Inicio</h2>
-
-    <p>"Transforma tu Mundo Digital con Nosotros 🌐🚀
-        <br>
-        <br>
-        En un mundo cada vez más digitalizado, la tecnología es la clave para el éxito y la comodidad. En nuestra empresa, estamos listos para ser tu aliado en el viaje tecnológico. ¿Listo para aprovechar al máximo tus dispositivos y sistemas?
-        <br>
-        Imagina una experiencia informática sin problemas, donde tus problemas se resuelven con rapidez y eficacia, y donde tus dispositivos funcionan a la perfección. Esto es lo que ofrecemos:
-        <br>
-        <br>
-        ✅ Soporte Técnico Profesional: Nuestro equipo de expertos está listo para abordar cualquier desafío informático que enfrentes. Desde la solución de problemas hasta la optimización de sistemas, estamos aquí para ti.
-        <br>
-        <br>
-        ✅ Personalización y Asesoramiento: Sabemos que cada usuario es único. Ofrecemos soluciones personalizadas y asesoramiento experto para satisfacer tus necesidades específicas.
-        <br>
-        <br>
-        Estamos comprometidos a brindarte las herramientas y el conocimiento que necesitas para triunfar en el mundo digital. Tu comodidad y satisfacción son nuestra prioridad.
-        <br>
-        ¿Listo para transformar tu mundo digital? ¡Únete a nosotros en esta emocionante travesía! Explora nuestros servicios y productos y déjanos ser tu socio tecnológico de confianza. ¡Juntos, haremos que tus sueños tecnológicos se hagan realidad! 🌟💻</p>
-
+        </nav>
     </header>
 
-    <section class="content contact">
-        <h2 class="tcontact" id="contacto">Contacto</h2>
+    <main>
+<!--Notebooks-->
+        <section id="Notebooks">
+            <h2>Notebooks</h2>
 
-        
-        <p>Cualquier consulta carga los siguientes datos y en breve me estare comunicando con usted. Muchas gracias!!</p>
-        <form class="formulario" action="https://formsubmit.co/facundonogueroles@gmail.com" method="post">
-     
-            <div class="input-group">
-    
-                <label for="name">nombre</label>
-                <input type="text" name="name" id="name" placeholder="nombre">
-    
-                <label for="phone">telefono</label>
-                <input type="tel" name="phone" id="phone" placeholder="telefono">
-    
-                <label for="email">email</label>
-                <input type="email" name="email" id="email" placeholder="email">
-    
-                <label for="message">mensaje</label>
-                <textarea type="message" name="message" id="message" cols="30" rows="5" placeholder="mensaje"></textarea>
-    
-                <input class="btn" type="submit" value="enviar">
-    
-                <input type="hidden" name="_next" value="f-a-c-u-pag.github.io">
-                <input type="hidden" name="_captcha" value="false">
-    
+            <div class="product">
+                <img src="public/assents/img/notebook/1.jpg" alt="">
+                <h3>Notebook Lenovo IdeaPad 3 15ALC6 FHD 15.6" Ryzen 3 5300U 8GB 256GB SSD NVMe Blue</h3>
+                <p>$635.000</p>
+                <button onclick="addToCart('Notebook Lenovo IdeaPad 3 15ALC6 FHD 15.6 Ryzen 3 5300U 8GB 256GB SSD NVMe Blue')">Añadir al Carrito</button>
             </div>
-        </form>
-    </section>
-    
-    <script src="https://code.jquery.com/jquery-latest.js"></script>
-    <script src="menu.js"></script>
 
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5982409703562998"
-     crossorigin="anonymous"></script>
+            <div class="product">
+                <img src="public/assents/img/notebook/2.jpg" alt="">
+                <h3>Notebook Noblex N14 FHD 14" Core I3 1115G4 8GB 256GB SSD</h3>
+                <p>$545.000</p>
+                <button onclick="addToCart('Notebook Noblex N14 FHD 14 Core I3 1115G4 8GB 256GB SSD')">Añadir al Carrito</button>
+            </div>
 
+            <div class="product">
+                <img src="public/assents/img/notebook/3.jpg" alt="">
+                <h3>Notebook Lenovo ThinkPad E14 FHD 14" Ryzen 7 5700U 8GB 256GB SSD NVMe</h3>
+                <p>$1.105.000</p>
+                <button onclick="addToCart('Notebook Lenovo ThinkPad E14 FHD 14 Ryzen 7 5700U 8GB 256GB SSD NVMe Freedos')">Añadir al Carrito</button>
+            </div>
+            
+            <div class="product">
+                <img src="public/assents/img/notebook/4.jpg" alt="">
+                <h3>Notebook Lenovo IdeaPad 3 15ALC7 FHD 15.6" Ryzen 5 5500U 8GB 256GB SSD NVMe Blue</h3>
+                <p>$815.000</p>
+                <button onclick="addToCart('Notebook Lenovo IdeaPad 3 15ALC7 FHD 15.6 Ryzen 5 5500U 8GB 256GB SSD NVMe Blue')">Añadir al Carrito</button>
+            </div>
+
+            <div class="product">
+                <img src="public/assents/img/notebook/5.jpg" alt="">
+                <h3>Notebook Dell Inspiron 3520 IPS FHD 15.6" Core I5 1135G7 8GB 256GB SSD NVMe</h3>
+                <p>$825.000</p>
+                <button onclick="addToCart('Notebook Dell Inspiron 3520 IPS FHD 15.6 Core I5 1135G7 8GB 256GB SSD NVMe')">Añadir al Carrito</button>
+            </div>
+
+            <div class="product">
+                <img src="public/assents/img/notebook/6.jpg" alt="">
+                <h3>Notebook Lenovo V15 G3 15.6" FHD Ryzen 7 5825U 8GB 512GB SSD NVMe</h3>
+                <p>$905.000</p>
+                <button onclick="addToCart('Notebook Lenovo V15 G3 15.6 FHD Ryzen 7 5825U 8GB 512GB SSD NVMe')">Añadir al Carrito</button>
+            </div>
+
+            <div class="product">
+                <img src="public/assents/img/notebook/7.jpg" alt="">
+                <h3>Notebook Gamer Lenovo Legion 5 15ITH6H FHD 15.6" I5 11400H 8GB 512GB NVME RTX 3060 6GB 165Hz Silver</h3>
+                <p>$1.665.000</p>
+                <button onclick="addToCart('Notebook Gamer Lenovo Legion 5 15ITH6H FHD 15.6 I5 11400H 8GB 512GB NVME RTX 3060 6GB 165Hz Silver')">Añadir al Carrito</button>
+            </div>
+
+            <div class="product">
+                <img src="public/assents/img/notebook/8.jpg" alt="">
+                <h3>Notebook Gamer Lenovo Legion 5 15ACH6A WQHD 2K 15.6" R5 5600H 16GB (2x8GB) 512GB SSD NVME RX6600M 8GB 165Hz Silver</h3>
+                <p>$1.505.000</p>
+                <button onclick="addToCart('Notebook Gamer Lenovo Legion 5 15ACH6A WQHD 2K 15.6 R5 5600H 16GB (2x8GB) 512GB SSD NVME RX6600M 8GB 165Hz Silver')">Añadir al Carrito</button>
+            </div>
+
+            <div class="product">
+                <img src="public/assents/img/notebook/9.jpg" alt="">
+                <h3>Notebook Gamer Dell G15 5530 15.6" FHD Core i9-13900HX RTX4060 32GB DDR5 1TB SSD</h3>
+                <p>$2.500.000</p>
+                <button onclick="addToCart('Notebook Gamer Dell G15 5530 15.6 FHD Core i9-13900HX RTX4060 32GB DDR5 1TB SSD')">Añadir al Carrito</button>
+            </div>
+
+            <div class="product">
+                <img src="public/assents/img/notebook/10.jpg" alt="">
+                <h3>Notebook Gamer Acer Nitro 5 15.6" FHD Core i7-12650H RTX4060 16GB 512GB SSD</h3>
+                <p>$1.855.000</p>
+                <button onclick="addToCart('Notebook Gamer Acer Nitro 5 15.6 FHD Core i7-12650H RTX4060 16GB 512GB SSD')">Añadir al Carrito</button>
+            </div>
+
+            <div class="product">
+                <img src="public/assents/img/notebook/11.jpg" alt="">
+                <h3>Notebook Gamer Acer Predator Helios Neo 16 16" WUXGA 165Hz i7-13650HX RTX4060 16GB DDR5 512SSD</h3>
+                <p>$2.045.000</p>
+                <button onclick="addToCart('Notebook Gamer Acer Predator Helios Neo 16 16 WUXGA 165Hz i7-13650HX RTX4060 16GB DDR5 512SSD')">Añadir al Carrito</button>
+            </div>
+
+            <div class="product">
+                <img src="public/assents/img/notebook/12.jpg" alt="">
+                <h3>Notebook Gamer Acer Nitro 15.6" FHD i5-12450H RTX3050 8GB 512GB SSD</h3>
+                <p>$1.305.000</p>
+                <button onclick="addToCart('Notebook Gamer Acer Nitro 15.6 FHD i5-12450H RTX3050 8GB 512GB SSD')">Añadir al Carrito</button>
+            </div>
+
+            <div class="product">
+                <img src="public/assents/img/notebook/13.jpg" alt="">
+                <h3>Notebook Gamer Dell G15 5530 15.6 FHD Core i7-13650HX RTX4060 16GB DDR5 1TB SSD</h3>
+                <p>$2.055.000</p>
+                <button onclick="addToCart('Notebook Gamer Dell G15 5530 15.6 FHD Core i7-13650HX RTX4060 16GB DDR5 1TB SSD')">Añadir al Carrito</button>
+            </div>
+
+            <div class="product">
+                <img src="public/assents/img/notebook/14.jpg" alt="">
+                <h3>Notebook Gamer Asus ROG Zephyrus G16 16" i7-13620H RTX4060 16GB 512GB</h3>
+                <p>$2.095.000</p>
+                <button onclick="addToCart('Notebook Gamer Asus ROG Zephyrus G16 16 i7-13620H RTX4060 16GB 512GB')">Añadir al Carrito</button>
+            </div>
+
+            <div class="product">
+                <img src="public/assents/img/notebook/15.jpg" alt="">
+                <h3>Notebook Gamer MSI Sword 16HX 16" 144Hz i7-14650HX RTX4060 16GB RAM 1TB SSD</h3>
+                <p>$2.095.000</p>
+                <button onclick="addToCart('Notebook Gamer MSI Sword 16HX 16 144Hz i7-14650HX RTX4060 16GB RAM 1TB SSD')">Añadir al Carrito</button>
+            </div>
+
+            <div class="product">
+                <img src="public/assents/img/notebook/16.jpg" alt="">
+                <h3>Notebook Gamer Asus Vivobook Pro 16" Core i9-13900H RTX4060 16GB 512GB SSD</h3>
+                <p>$2.355.000</p>
+                <button onclick="addToCart('Notebook Gamer Asus Vivobook Pro 16 Core i9-13900H RTX4060 16GB 512GB SSD')">Añadir al Carrito</button>
+            </div>
+
+            <div class="product">
+                <img src="public/assents/img/notebook/17.jpg" alt="">
+                <h3>Notebook Gamer MSI Katana 15.6" FHD 144hz Ryzen 7-8845HS RTX4060 16GB 1TB SSD</h3>
+                <p>$2.045.000</p>
+                <button onclick="addToCart('Notebook Gamer MSI Katana 15.6 FHD 144hz Ryzen 7-8845HS RTX4060 16GB 1TB SSD')">Añadir al Carrito</button>
+            </div>
+
+            <div class="product">
+                <img src="public/assents/img/notebook/18.jpg" alt="">
+                <h3>Notebook Acer Aspire 3 15.6" FHD Core i7-1165G7 8GB 512GB SSD</h3>
+                <p>$940.000</p>
+                <button onclick="addToCart('Notebook Acer Aspire 3 15.6 FHD Core i7-1165G7 8GB 512GB SSD')">Añadir al Carrito</button>
+            </div>
+
+            <div class="product">
+                <img src="public/assents/img/notebook/19.jpg" alt="">
+                <h3>Notebook Acer Aspire 5 15.6" FHD Touchscreen Core i5-13420H 8GB 512GB SSD</h3>
+                <p>$895.000</p>
+                <button onclick="addToCart('Notebook Acer Aspire 5 15.6 FHD Touchscreen Core i5-13420H 8GB 512GB SSD')">Añadir al Carrito</button>
+            </div>
+
+            <div class="product">
+                <img src="public/assents/img/notebook/20.jpg" alt="">
+                <h3>Notebook Asus Vivobook 14" FHD Core i3-1215U 8GB 128GB SSD Quiet Blue</h3>
+                <p>$585.000</p>
+                <button onclick="addToCart('Notebook Asus Vivobook 14 FHD Core i3-1215U 8GB 128GB SSD Quiet Blue')">Añadir al Carrito</button>
+            </div>
+
+            <div class="product">
+                <img src="public/assents/img/notebook/21.jpg" alt="">
+                <h3>Notebook Gamer Asus TUF F15 FX507VI 15.6" 144Hz Core i7-13620H RTX4070 16GB 1TB SSD</h3>
+                <p>$2.355.000</p>
+                <button onclick="addToCart('Notebook Gamer Asus TUF F15 FX507VI 15.6 144Hz Core i7-13620H RTX4070 16GB 1TB SSD')">Añadir al Carrito</button>
+            </div>
+
+<!--PC escritorio-->
+            <section id="PC-Escritorio">
+                <h2>PC Escritorio</h2>
+
+                <div class="product">
+                    <img src="public/assents/img/escritorio/1.jpg" alt="">
+                    <h3></h3>
+                    <p>Componentes a eleccion y acorde a tus necesidades</p>
+                    <button onclick="addToCart('Componentes a eleccion y acorde a tus necesidades')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/escritorio/2.jpg" alt="">
+                    <h3></h3>
+                    <p>Componentes a eleccion y acorde a tus necesidades</p>
+                    <button onclick="addToCart('Componentes a eleccion y acorde a tus necesidades')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/escritorio/3.jpg" alt="">
+                    <h3></h3>
+                    <p>Componentes a eleccion y acorde a tus necesidades</p>
+                    <button onclick="addToCart('Componentes a eleccion y acorde a tus necesidades')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/escritorio/4.jpg" alt="">
+                    <h3></h3>
+                    <p>Componentes a eleccion y acorde a tus necesidades</p>
+                    <button onclick="addToCart('Componentes a eleccion y acorde a tus necesidades')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/escritorio/5.jpg" alt="">
+                    <h3></h3>
+                    <p>Componentes a eleccion y acorde a tus necesidades</p>
+                    <button onclick="addToCart('Componentes a eleccion y acorde a tus necesidades')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/escritorio/6.jpg" alt="">
+                    <h3></h3>
+                    <p>Componentes a eleccion y acorde a tus necesidades</p>
+                    <button onclick="addToCart('Componentes a eleccion y acorde a tus necesidades')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/escritorio/7.jpg" alt="">
+                    <h3></h3>
+                    <p>Componentes a eleccion y acorde a tus necesidades</p>
+                    <button onclick="addToCart('Componentes a eleccion y acorde a tus necesidades')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/escritorio/8.jpg" alt="">
+                    <h3></h3>
+                    <p>Componentes a eleccion y acorde a tus necesidades</p>
+                    <button onclick="addToCart('Componentes a eleccion y acorde a tus necesidades')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/escritorio/9.jpg" alt="">
+                    <h3></h3>
+                    <p>Componentes a eleccion y acorde a tus necesidades</p>
+                    <button onclick="addToCart('Componentes a eleccion y acorde a tus necesidades')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/escritorio/10.jpg" alt="">
+                    <h3></h3>
+                    <p>Componentes a eleccion y acorde a tus necesidades</p>
+                    <button onclick="addToCart('Componentes a eleccion y acorde a tus necesidades')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/escritorio/11.jpg" alt="">
+                    <h3></h3>
+                    <p>Componentes a eleccion y acorde a tus necesidades</p>
+                    <button onclick="addToCart('Componentes a eleccion y acorde a tus necesidades')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/escritorio/12.jpg" alt="">
+                    <h3></h3>
+                    <p>Componentes a eleccion y acorde a tus necesidades</p>
+                    <button onclick="addToCart('Componentes a eleccion y acorde a tus necesidades')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/escritorio/13.jpg" alt="">
+                    <h3></h3>
+                    <p>Componentes a eleccion y acorde a tus necesidades</p>
+                    <button onclick="addToCart('Componentes a eleccion y acorde a tus necesidades')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/escritorio/14.jpg" alt="">
+                    <h3></h3>
+                    <p>Componentes a eleccion y acorde a tus necesidades</p>
+                    <button onclick="addToCart('Componentes a eleccion y acorde a tus necesidades')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/escritorio/15.jpg" alt="">
+                    <h3></h3>
+                    <p>Componentes a eleccion y acorde a tus necesidades</p>
+                    <button onclick="addToCart('Componentes a eleccion y acorde a tus necesidades')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/escritorio/16.jpg" alt="">
+                    <h3></h3>
+                    <p>Componentes a eleccion y acorde a tus necesidades</p>
+                    <button onclick="addToCart('Componentes a eleccion y acorde a tus necesidades')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/escritorio/17.jpg" alt="">
+                    <h3></h3>
+                    <p>Componentes a eleccion y acorde a tus necesidades</p>
+                    <button onclick="addToCart('Componentes a eleccion y acorde a tus necesidades')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/escritorio/18.jpg" alt="">
+                    <h3></h3>
+                    <p>Componentes a eleccion y acorde a tus necesidades</p>
+                    <button onclick="addToCart('Componentes a eleccion y acorde a tus necesidades')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/escritorio/19.jpg" alt="">
+                    <h3></h3>
+                    <p>Componentes a eleccion y acorde a tus necesidades</p>
+                    <button onclick="addToCart('Componentes a eleccion y acorde a tus necesidades')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/escritorio/20.jpg" alt="">
+                    <h3></h3>
+                    <p>Componentes a eleccion y acorde a tus necesidades</p>
+                    <button onclick="addToCart('Componentes a eleccion y acorde a tus necesidades')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/escritorio/21.jpg" alt="">
+                    <h3></h3>
+                    <p>Componentes a eleccion y acorde a tus necesidades</p>
+                    <button onclick="addToCart('Componentes a eleccion y acorde a tus necesidades')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/escritorio/23.jpg" alt="">
+                    <h3></h3>
+                    <p>Componentes a eleccion y acorde a tus necesidades</p>
+                    <button onclick="addToCart('Componentes a eleccion y acorde a tus necesidades')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/escritorio/24.jpg" alt="">
+                    <h3></h3>
+                    <p>Componentes a eleccion y acorde a tus necesidades</p>
+                    <button onclick="addToCart('Componentes a eleccion y acorde a tus necesidades')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/escritorio/25.jpg" alt="">
+                    <h3></h3>
+                    <p>Componentes a eleccion y acorde a tus necesidades</p>
+                    <button onclick="addToCart('Componentes a eleccion y acorde a tus necesidades')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/escritorio/26.jpg" alt="">
+                    <h3></h3>
+                    <p>Componentes a eleccion y acorde a tus necesidades</p>
+                    <button onclick="addToCart('Componentes a eleccion y acorde a tus necesidades')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/escritorio/27.jpg" alt="">
+                    <h3></h3>
+                    <p>Componentes a eleccion y acorde a tus necesidades</p>
+                    <button onclick="addToCart('Componentes a eleccion y acorde a tus necesidades')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/escritorio/28.jpg" alt="">
+                    <h3></h3>
+                    <p>Componentes a eleccion y acorde a tus necesidades</p>
+                    <button onclick="addToCart('Componentes a eleccion y acorde a tus necesidades')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/escritorio/29.jpg" alt="">
+                    <h3></h3>
+                    <p>Componentes a eleccion y acorde a tus necesidades</p>
+                    <button onclick="addToCart('Componentes a eleccion y acorde a tus necesidades')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/escritorio/30.jpg" alt="">
+                    <h3></h3>
+                    <p>Componentes a eleccion y acorde a tus necesidades</p>
+                    <button onclick="addToCart('Componentes a eleccion y acorde a tus necesidades')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/escritorio/31.jpg" alt="">
+                    <h3></h3>
+                    <p>Componentes a eleccion y acorde a tus necesidades</p>
+                    <button onclick="addToCart('Componentes a eleccion y acorde a tus necesidades')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/escritorio/32.jpg" alt="">
+                    <h3></h3>
+                    <p>Componentes a eleccion y acorde a tus necesidades</p>
+                    <button onclick="addToCart('Componentes a eleccion y acorde a tus necesidades')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/escritorio/33.jpg" alt="">
+                    <h3></h3>
+                    <p>Componentes a eleccion y acorde a tus necesidades</p>
+                    <button onclick="addToCart('Componentes a eleccion y acorde a tus necesidades')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/escritorio/34.jpg" alt="">
+                    <h3></h3>
+                    <p>Componentes a eleccion y acorde a tus necesidades</p>
+                    <button onclick="addToCart('Componentes a eleccion y acorde a tus necesidades')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/escritorio/35.jpg" alt="">
+                    <h3></h3>
+                    <p>Componentes a eleccion y acorde a tus necesidades</p>
+                    <button onclick="addToCart('Componentes a eleccion y acorde a tus necesidades')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/escritorio/36.jpg" alt="">
+                    <h3></h3>
+                    <p>Componentes a eleccion y acorde a tus necesidades</p>
+                    <button onclick="addToCart('Componentes a eleccion y acorde a tus necesidades')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/escritorio/37.jpg" alt="">
+                    <h3></h3>
+                    <p>Componentes a eleccion y acorde a tus necesidades</p>
+                    <button onclick="addToCart('Componentes a eleccion y acorde a tus necesidades')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/escritorio/38.jpg" alt="">
+                    <h3></h3>
+                    <p>Componentes a eleccion y acorde a tus necesidades</p>
+                    <button onclick="addToCart('Componentes a eleccion y acorde a tus necesidades')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/escritorio/40.jpg" alt="">
+                    <h3></h3>
+                    <p>Componentes a eleccion y acorde a tus necesidades</p>
+                    <button onclick="addToCart('Componentes a eleccion y acorde a tus necesidades')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/escritorio/41.jpg" alt="">
+                    <h3></h3>
+                    <p>Componentes a eleccion y acorde a tus necesidades</p>
+                    <button onclick="addToCart('Componentes a eleccion y acorde a tus necesidades')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/escritorio/42.jpg" alt="">
+                    <h3></h3>
+                    <p>Componentes a eleccion y acorde a tus necesidades</p>
+                    <button onclick="addToCart('Componentes a eleccion y acorde a tus necesidades')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/escritorio/43.jpg" alt="">
+                    <h3></h3>
+                    <p>Componentes a eleccion y acorde a tus necesidades</p>
+                    <button onclick="addToCart('Componentes a eleccion y acorde a tus necesidades')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/escritorio/44.jpg" alt="">
+                    <h3></h3>
+                    <p>Componentes a eleccion y acorde a tus necesidades</p>
+                    <button onclick="addToCart('Componentes a eleccion y acorde a tus necesidades')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/escritorio/45.jpg" alt="">
+                    <h3></h3>
+                    <p>Componentes a eleccion y acorde a tus necesidades</p>
+                    <button onclick="addToCart('Componentes a eleccion y acorde a tus necesidades')">Añadir al Carrito</button>
+                </div>
+
+            </section>
+
+    </main>
+
+    <aside>
+        <h2 id="Carrito">Carrito de Compras</h2>
+        <ul id="cart"></ul>
+        <button onclick="sendOrder()">Enviar Pedido</button>
+    </aside>
+
+    <footer>
+        <p id="Contacto">Contacto</p>
+        <a href="https://wa.me/5491156108622" class="whatsapp-button" target="_blank">Consulta por WhatsApp</a>
+        <br>
+        <a href="https://www.instagram.com/innovation.ff/" class="whatsapp-button" target="_blank">instagram</a>
+    </footer>
+    <script src="scripts.js"></script>
 </body>
-
 </html>
