@@ -38,11 +38,9 @@ function sendOrder() {
     const subject = 'Nuevo Pedido';
     const body = `Hola, me gustaría ordenar los siguientes productos: ${order}`;
 
-    // Enviar por WhatsApp
     window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(body)}`, '_blank');
 }
 
-//buscador
 const menuToggle = document.querySelector('#mobile-menu');
 const navList = document.querySelector('.nav-list');
 
