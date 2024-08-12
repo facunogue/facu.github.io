@@ -8,7 +8,32 @@ let cart = [];
 function addToCart(product) {
     cart.push(product);
     updateCart();
+
+    const buttons = document.querySelectorAll('.product button');
+    buttons.forEach(button => {
+        if (button.textContent.includes(product)) {
+            button.classList.add('product-added');
+            setTimeout(() => {
+                button.classList.remove('product-added');
+            }, 500); // El mismo tiempo que la animación CSS
+        }
+    });
 }
+
+function showFloatingMessage() {
+    const message = document.getElementById('floating-message');
+    message.style.display = 'block';
+    setTimeout(() => {
+        message.style.display = 'none';
+    }, 1500); // El mensaje desaparecerá después de 1.5 segundos
+}
+
+function addToCart(product) {
+    cart.push(product);
+    updateCart();
+    showFloatingMessage();
+}
+
 
 function removeFromCart(index) {
     cart.splice(index, 1);
@@ -48,16 +73,42 @@ menuToggle.addEventListener('click', function() {
     navList.classList.toggle('show');
 });
 
-function searchFunction() {
+function searchProducts() {
+    console.log("Buscando productos...");
     const input = document.getElementById('search-bar').value.toLowerCase();
-    const sections = document.querySelectorAll('main, aside, footer');
+    const products = document.querySelectorAll('.product');
     
-    sections.forEach(section => {
-        const text = section.innerText.toLowerCase();
-        if (text.includes(input)) {
-            section.style.display = '';
+    products.forEach(product => {
+        const productName = product.querySelector('h3').textContent.toLowerCase();
+        if (productName.includes(input)) {
+            product.style.display = 'block';
         } else {
-            section.style.display = 'none';
+            product.style.display = 'none';
         }
     });
 }
+
+
+document.getElementById('search-bar').addEventListener('keypress', function(event) {
+    if (event.key === 'Enter') {
+        searchProducts();
+    }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    window.onscroll = function() {
+        const backToTop = document.getElementById('back-to-top');
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTop.style.display = 'block';
+        } else {
+            backToTop.style.display = 'none';
+        }
+    };
+
+    document.getElementById('back-to-top').addEventListener('click', function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+});

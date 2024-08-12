@@ -263,3 +263,50 @@ h2, h3 {
         flex: 1 1 100%;
     }
 }
+
+@keyframes addToCartAnimation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.product-added {
+    animation: addToCartAnimation 0.5s ease-in-out;
+    background-color: #4caf50;
+    color: white;
+}
+
+#floating-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000; /* Para que quede delante de otros elementos */
+    background-color: #4caf50;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 18px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color: #4caf50;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 24px;
+    text-align: center;
+    display: none;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#back-to-top:hover {
+    background-color: #3e8e41;
+}

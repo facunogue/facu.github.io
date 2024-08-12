@@ -6,16 +6,21 @@
     <title>Innovation FF - Productos</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
 </head>
 <body>
     <header>
         <div class="header-container">
+            
             <h1>Innovation FF</h1>
-            <!--
+
             <div class="search-container">
-                <input type="text" id="search-bar" placeholder="Buscar...">
-                <button onclick="searchFunction()"><i class="fas fa-search"></i></button>
-            </div>-->
+                <input type="text" id="search-bar" placeholder="Buscar productos...">
+                <button type="button" onclick="searchProducts()">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
         </div>
         <nav>
             <div class="menu-toggle" id="mobile-menu">
@@ -27,6 +32,7 @@
                     <ul class="sub-menu">
                         <li><a href="#Notebook">Notebooks</a></li>
                         <li><a href="#PC-Escritorio">PC Escritorio</a></li>
+                        <li><a href="#Celulares">Celulares</a></li>
                     </ul>
                     
                 </li>
@@ -42,6 +48,16 @@
 
     <main>
 
+        <div id="floating-message" style="display:none; position:fixed; top:10%; right:10%; background-color:#4caf50; color:white; padding:10px; border-radius:5px;">
+            El producto se agrego al carrito correctamente
+        </div>
+        
+
+        <h3>Importante</h3>
+
+        <p>Celulares y Notebooks: Estaran disponibles a los 20-30 dias habiles despues de haber enviado el pedido, cuando este disponible se le notificara que ya esta disponible para su retiro en oficina</p>
+        <p>Computadoras (notebooks* y escritorio*): Estaran disponibles a los 2-3 dias habiles despues de haber enviado el pedido, cuando este disponible se le notificara que ya esta disponible para su retiro en oficina</p>
+
         <h3>Las computadoras vienen con:</h3>
         <p>✅ Paquete Microsoft 365 office
             <br>
@@ -53,12 +69,16 @@
             <br>
             ✅ Consultar stock
             <br>
-            ✅ brindamos asesoremiento profesional
+            ✅ Asesoremiento profesional
         </p>
+
+        <h3>Proximamente</h3>
+
+        <p>Maquinas Retro Arcade con paquete completo de juegos</p>
         
 <!--Notebooks-->
         <section id="Notebooks" class="products-container">
-            <h2 class="title">Notebooks</h2>
+            <h2 class="title">Notebooks*</h2>
 
             <div class="product">
                 <img src="public/assents/img/notebook/1.jpg" alt="">
@@ -72,13 +92,6 @@
                 <h3>Notebook Noblex N14 FHD 14" Core I3 1115G4 8GB 256GB SSD</h3>
                 <p>$545.000</p>
                 <button onclick="addToCart('Notebook Noblex N14 FHD 14 Core I3 1115G4 8GB 256GB SSD')">Añadir al Carrito</button>
-            </div>
-
-            <div class="product">
-                <img src="public/assents/img/notebook/3.jpg" alt="">
-                <h3>Notebook Lenovo ThinkPad E14 FHD 14" Ryzen 7 5700U 8GB 256GB SSD NVMe</h3>
-                <p>$1.105.000</p>
-                <button onclick="addToCart('Notebook Lenovo ThinkPad E14 FHD 14 Ryzen 7 5700U 8GB 256GB SSD NVMe Freedos')">Añadir al Carrito</button>
             </div>
             
             <div class="product">
@@ -107,13 +120,6 @@
                 <h3>Notebook Gamer Lenovo Legion 5 15ACH6A WQHD 2K 15.6" R5 5600H 16GB (2x8GB) 512GB SSD NVME RX6600M 8GB 165Hz Silver</h3>
                 <p>$1.505.000</p>
                 <button onclick="addToCart('Notebook Gamer Lenovo Legion 5 15ACH6A WQHD 2K 15.6 R5 5600H 16GB (2x8GB) 512GB SSD NVME RX6600M 8GB 165Hz Silver')">Añadir al Carrito</button>
-            </div>
-
-            <div class="product">
-                <img src="public/assents/img/notebook/9.jpg" alt="">
-                <h3>Notebook Gamer Dell G15 5530 15.6" FHD Core i9-13900HX RTX4060 32GB DDR5 1TB SSD</h3>
-                <p>$2.500.000</p>
-                <button onclick="addToCart('Notebook Gamer Dell G15 5530 15.6 FHD Core i9-13900HX RTX4060 32GB DDR5 1TB SSD')">Añadir al Carrito</button>
             </div>
 
             <div class="product">
@@ -166,13 +172,6 @@
             </div>
 
             <div class="product">
-                <img src="public/assents/img/notebook/18.jpg" alt="">
-                <h3>Notebook Acer Aspire 3 15.6" FHD Core i7-1165G7 8GB 512GB SSD</h3>
-                <p>$940.000</p>
-                <button onclick="addToCart('Notebook Acer Aspire 3 15.6 FHD Core i7-1165G7 8GB 512GB SSD')">Añadir al Carrito</button>
-            </div>
-
-            <div class="product">
                 <img src="public/assents/img/notebook/19.jpg" alt="">
                 <h3>Notebook Gamer Acer Nitro 5 15.6" FHD 144Hz Core i9-12900H RTX4060 16GB DDR5 512GB SSD NVME</h3>
                 <p>$2.000.000</p>
@@ -188,7 +187,7 @@
 
 <!--PC escritorio-->
             <section id="PC-Escritorio" class="products-container">
-                <h2 class="title">PC Escritorio</h2>
+                <h2 class="title">PC Escritorio*</h2>
 
                 <div class="product">
                     <img src="public/assents/img/escritorio/1.jpg" alt="">
@@ -492,6 +491,571 @@
                 </div>
 
             </section>
+<!--Celulares-->
+            <section id="Celulares" class="products-container">
+                <h2 class="title">Celulares</h2>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/1.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/2.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/3.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/4.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/5.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/6.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/7.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/8.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/9.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/10.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/11.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/12.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/13.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/14.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/15.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/16.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/17.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/18.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/19.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/20.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/21.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/22.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/23.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/24.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/25.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/26.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/27.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/28.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/29.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/30.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/31.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/32.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/33.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/34.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/35.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/36.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/37.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/38.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/39.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/40.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/41.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/42.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/43.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/44.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/45.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/46.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/47.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/48.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/49.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/50.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/51.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/52.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/53.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/54.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/55.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/56.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/57.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/58.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/59.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/60.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/61.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/62.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/63.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/64.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/65.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/66.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/67.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/68.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/69.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/70.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/71.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/72.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/73.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/74.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/75.jpg" alt="">
+                    <h35></h35>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/76.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/77.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/78.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/79.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+                <div class="product">
+                    <img src="public/assents/img/telefonos/80.jpg" alt="">
+                    <h3></h3>
+                    <p></p>
+                    <button onclick="addToCart('')">Añadir al Carrito</button>
+                </div>
+
+            </section>
 
     </main>
 
@@ -508,5 +1072,10 @@
         <a href="https://www.instagram.com/innovation.ff/" class="whatsapp-button" target="_blank">instagram</a>
     </footer>
     <script src="scripts.js"></script>
+
+    <div id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    
 </body>
 </html>
